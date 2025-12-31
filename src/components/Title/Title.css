@@ -1,0 +1,28 @@
+/* ===================================
+   Section Title Component
+   =================================== */
+
+/* Main title with scroll-triggered animation */
+.title{
+    text-align: left;
+    color: #e5e7eb;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: none;
+    margin: 70px 0 5px;
+    padding-left: 25px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+/* Optional subtitle with scroll-triggered animation */
+.title h2{
+    font-size: 20px;
+    color: #9ca3af;
+    margin-top: 5px;
+    text-transform: none;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}

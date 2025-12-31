@@ -1,0 +1,106 @@
+/* ===================================
+   Text Card Component
+   =================================== */
+
+/* Main card container with border and scroll-triggered animation */
+.text-card {
+  margin-left: 10px;
+  margin-right: 10px;
+  color:#9ca3af;
+  border: 1px solid #10b981;
+  padding: 20px;
+  border-radius: 12px;
+  
+  /* Fade in animation on scroll */
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+/* ===================================
+   Card Header
+   =================================== */
+
+/* Header layout - title on left, date on right */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e5e7eb;
+}
+
+/* Card title */
+.card-header h3 {
+  font-size: 1.4rem;
+  color: #e5e7eb
+}
+
+/* Date/time period display */
+.date {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  opacity: 0.9;
+}
+
+/* ===================================
+   Card Content
+   =================================== */
+
+/* Optional subtitle (company name, location, etc.) */
+.subtitle {
+  font-size: 1rem;
+  color: #10b981;
+  margin-bottom: 12px;
+}
+
+/* Bullet point list for descriptions */
+.card-list{
+  color:#9ca3af;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+/* Individual list items with spacing */
+.card-list li{
+  margin-bottom: 5px;
+}
+
+/* ===================================
+   Tags & Links
+   =================================== */
+
+/* Tag container - wrapping flex layout */
+.project-tags {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap
+}
+
+/* Individual technology/skill tags */
+.tag {
+  color: #10b981;
+  border: 1px solid #10b981;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+/* Project/external link button */
+.project-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #10b981;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #10b981;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+/* Link hover effect - filled background */
+.project-link:hover {
+  background: #10b981;
+  color: #000;
+}

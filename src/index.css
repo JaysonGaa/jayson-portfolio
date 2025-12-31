@@ -1,0 +1,99 @@
+/* ===================================
+   Google Fonts Import
+   =================================== */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* ===================================
+   Global Reset & Base Styles
+   =================================== */
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Dark gradient background for entire site */
+body{
+  background: linear-gradient(135deg, #1a1d2e 0%, #1e2a3a 50%, #243447 100%);
+}
+
+/* Remove default link styling */
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* ===================================
+   Layout & Containers
+   =================================== */
+
+/* Main content container with responsive padding */
+.container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* ===================================
+   Buttons
+   =================================== */
+
+/* Primary button style - green accent with dark text */
+.btn{
+  background-color: #10b981;
+  color: #1e293b;
+
+  padding: 14px 25px;
+  font-size: 15px;
+
+  border-radius: 10px;
+  border: 0.5px solid #10b981;
+
+  cursor: pointer;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon styling for buttons - not currently in use
+.btn img{
+  width: 20px;
+  margin-left: 10px;
+} */
+
+/* ===================================
+   Media Queries
+   =================================== */
+
+/* Tablet and smaller screens */
+@media (max-width: 1200px){
+    /* Reduce container padding on smaller screens */
+    .container{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    /* Slightly smaller button padding */
+    .btn{
+      padding: 14px 22px
+    }
+}
+
+/* ===================================
+   Animations
+   =================================== */
+
+/* Fade in and scale up animation */
+@keyframes appear{
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}

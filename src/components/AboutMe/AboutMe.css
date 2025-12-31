@@ -1,0 +1,89 @@
+/* ===================================
+   About Me Section
+   =================================== */
+
+/* Main container - two column layout with space between */
+.about-me{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+/* Left column - profile image with scroll-triggered animation */
+.about-me-left{
+    flex-basis: 40%;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+/* Right column - text content with scroll-triggered animation */
+.about-me-right{
+    flex-basis: 56%;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+/* Profile image styling */
+.me{
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Section label text */
+.about-me h3{
+    font-weight: 600;
+    font-weight: 16px;
+    color:#e5e7eb
+}
+
+/* Main heading */
+.about-me h2{
+    font-size: 35px;
+    color:#9ca3af;
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+/* Description text */
+.about-me p{
+    color:#9ca3af;
+    margin-bottom: 15px;
+}
+
+/* ===================================
+   Media Queries
+   =================================== */
+
+/* Tablet and smaller screens */
+@media (max-width: 1000px){
+    /* Smaller profile image for mobile */
+    .me{
+        width: 200px;
+        border-radius: 10px;
+    }
+    
+    /* Reduced font size for section label */
+    .about-me h3{
+        font-weight: 600;
+        font-weight: 13px;
+        color:#e5e7eb
+    }
+    
+    /* Reduced heading size */
+    .about-me h2{
+        font-size: 30px;
+        color:#9ca3af;
+        margin: 10px 0;
+        max-width: 400px;
+    }
+    
+    /* Description text remains consistent */
+    .about-me p{
+        color:#9ca3af;
+        margin-bottom: 15px;
+    }  
+}

@@ -1,0 +1,99 @@
+/* ===================================
+   Navigation Bar
+   =================================== */
+
+/* Fixed navbar with glassmorphism effect */
+nav{
+    width: 100%;
+    background: rgba(26, 29, 46, 0.8);
+    backdrop-filter: blur(10px);
+    color: #10b981;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(16, 185, 129, 0.8);
+    z-index: 10;
+}
+
+/* Left section - logo and name */
+.left-corner{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color:#e5e7eb;
+    font-size: 20px;
+}
+
+/* Logo/initials image */
+.initials{
+    width: 50px;
+    height: 50px;
+}
+
+/* Navigation links - horizontal layout on desktop */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+    font-size: 16px;
+}
+
+/* Mobile menu toggle icon - hidden on desktop */
+.menu_icon{
+    display: none;
+}
+
+/* ===================================
+   Media Queries
+   =================================== */
+
+/* Slightly smaller screens - reduce nav link spacing */
+@media (max-width: 1000px){
+    nav ul li{
+        margin: 10px 15px;
+    }
+}
+
+/* Mobile view - slide-in menu */
+@media (max-width: 830px){
+    /* Remove glassmorphism from navbar on mobile */
+    nav{
+        padding: 15px 0;
+        background: none;
+        border-bottom: none;
+        backdrop-filter: none;
+    }
+    
+    /* Side drawer menu - slides in from right */
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(26, 29, 46, 0.8);
+        border-left:0.5px solid rgba(16, 185, 129, 0.8);
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Show hamburger menu icon */
+    .menu_icon{
+        display: block;
+        width: 50px;
+        cursor: pointer;
+    }
+    
+    /* Hidden state - menu off-screen to the right */
+    .hide-menu{
+        right: -200px
+    }
+}

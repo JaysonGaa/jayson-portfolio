@@ -1,0 +1,79 @@
+/* ===================================
+   Personal Life Section
+   =================================== */
+
+/* Main container - vertical layout for description and image grid */
+.my-life{
+    margin: 30px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Description text with scroll-triggered animation */
+.my-life-desc{
+    color: #9ca3af;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+/* Hobby images with scroll-triggered animation */
+.my-life-image img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+/* Image container - positioned for overlay caption */
+.my-life-image{
+    position: relative;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+/* Three-column grid layout for hobby images */
+.my-life-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* ===================================
+   Image Hover Effects
+   =================================== */
+
+/* Caption overlay - appears on hover with slide-up effect */
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,15,152,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#10b981;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%; /* Initial position - below image */
+    transition: 0.4s;
+}
+
+/* Show caption on hover with smooth slide-up animation */
+.my-life-image:hover .caption{
+    opacity: 1;
+    padding-top: 0; /* Final position - centered */
+}
