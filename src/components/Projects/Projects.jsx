@@ -33,7 +33,7 @@ const Projects = () => {
         'HTML', 
         'CSS',
         ]}
-        link = "https://github.com/JaysonGaa/jaysongaa.github.io"
+        link = "https://github.com/JaysonGaa/jayson-portfolio"
         linkText = ' View on GitHub →'
       />
 
