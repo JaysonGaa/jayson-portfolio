@@ -36,7 +36,7 @@
 /* Section label text */
 .about-me h3{
     font-weight: 600;
-    font-weight: 16px;
+    font-size: 16px;
     color:#e5e7eb
 }
 
@@ -58,9 +58,9 @@
    Media Queries
    =================================== */
 
-/* Tablet and smaller screens */
+/* Tablet screens */
 @media (max-width: 1000px){
-    /* Smaller profile image for mobile */
+    /* Smaller profile image for tablet */
     .me{
         width: 200px;
         border-radius: 10px;
@@ -69,7 +69,7 @@
     /* Reduced font size for section label */
     .about-me h3{
         font-weight: 600;
-        font-weight: 13px;
+        font-size: 13px;
         color:#e5e7eb
     }
     
@@ -86,4 +86,39 @@
         color:#9ca3af;
         margin-bottom: 15px;
     }  
+}
+
+/* Mobile screens - hide image and center text */
+@media (max-width: 768px){
+    /* Switch to single column centered layout */
+    .about-me{
+        flex-direction: column;
+        justify-content: center;
+        margin: 60px auto;
+    }
+    
+    /* Hide the image container on mobile */
+    .about-me-left{
+        display: none;
+    }
+    
+    /* Center text content and make full width */
+    .about-me-right{
+        flex-basis: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Center and adjust heading */
+    .about-me h2{
+        font-size: 28px;
+        margin: 10px auto;
+        max-width: 100%;
+    }
+    
+    /* Center paragraph text */
+    .about-me p{
+        text-align: center;
+        margin: 0 auto 15px;
+    }
 }
