@@ -1,20 +1,20 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React and Vite, showcasing my projects, experience, and skills in computer science and cybersecurity.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design** - Fully responsive layout optimized for desktop, tablet, and mobile devices
+- **Smooth Scrolling Navigation** - Seamless navigation between sections using react-scroll
+- **Contact Form** - Integrated EmailJS for direct email communication
+- **Project Showcase** - Featured projects with descriptions, tags, and GitHub links
+- **Animated Elements** - Scroll-triggered animations for engaging user experience
+- **Professional Background** - Detailed work experience and education sections
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-
-Used Links:
-https://www.npmjs.com/package/react-scroll
+- **React** - JavaScript library for building user interfaces
+- **Vite** - Next-generation frontend build tool
+- **React Router** - For smooth scroll navigation
+- **EmailJS** - Email service integration for contact form
+- **CSS3** - Custom styling with modern CSS features
