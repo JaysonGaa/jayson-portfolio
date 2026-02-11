@@ -43,6 +43,7 @@ const App = () => {
         {/* Professional background section */}
         <Title title='Professional Background'/>
         <Background/>
+
       </div>
 
     </div>

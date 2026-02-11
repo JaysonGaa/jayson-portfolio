@@ -14,9 +14,9 @@ const Background = () => {
         date = 'Sep. 2025 - Present'
         subtitle = 'ORTSOC - The Nations First Cybersecurity Teaching Hospital'
         description = {
-          ['Performed web application and infrastructure penetration testing, vulnerability analysis, and remediation support to improve client security posture.',
-            'Contributed to GRC initiatives including risk assessments, control validation, and policy alignment across rotations in threat intelligence, cybersecurity assessments, and offensive security.',
-            'Supported SOC operations by triaging and validating security alerts, verifying exploitability, and assessing control effectiveness.'
+          ['Rotated through SOC, GRC, and Offensive Security teams gaining hands-on experience in monitoring, incident response, threat intelligence, and penetration testing.',
+            'Triaged and validated security alerts, collaborating with senior analysts to investigate and respond to incidents.',
+            'Supported penetration tests and vulnerability assessments through reconnaissance, exploitation, and remediation documentation.'
           ]}
         />
         

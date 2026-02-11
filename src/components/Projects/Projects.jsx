@@ -12,17 +12,35 @@ const Projects = () => {
   return (
     <div className="projects">
 
+      {/* Packet Scanner */}
+      <TextCard 
+      title = 'Network Packet Scanner' 
+      date = 'Jan. 2026'
+      description = {
+        [
+        'Developed a Python-based network vulnerability scanner that analyzes PCAP files to detect insecure protocols, port–protocol mismatches, vulnerable TLS versions, and plaintext credential transmission.',
+        'Implemented protocol-layer inspection and heuristic-based detection for FTP, Telnet, HTTP, SMTP, POP3, and IMAP authentication leaks.',
+        'Built automated reporting with categorized vulnerability summaries and packet-level statistics to support network security analysis and incident investigation.'
+        ]
+      }
+      tags = {
+        [
+        'Python',
+        'pyShark'
+        ]}
+        link = "https://github.com/JaysonGaa/network-packet-scanner"
+        linkText = ' View on GitHub →'
+      />
+
       {/* Portfolio Website Project */}
       <TextCard 
       title = 'This Website!' 
       date = 'Dec. 2025'
       description = {
         [
-        'Designed and developed a responsive personal portfolio using React and modern CSS to showcase projects, experience, and technical skills.',
-        'Implemented reusable components (e.g., project cards, tag systems) to ensure maintainability and scalability.',
-        'Applied clean UI/UX principles with a professional design system, consistent typography, and accessibility aware styling.',
-        'Deployed and maintained the site with a focus on performance, responsiveness, and code organization.',
-        'Integrated interactive Capture-the-Flag (CTF) challenges to demonstrate foundational cybersecurity concepts and hands-on problem-solving skills.'
+        'Designed and developed a responsive personal portfolio showcasing projects and technical skills with clean UI/UX principles and accessibility-aware styling.',
+        'Implemented reusable React components and a consistent design system to ensure maintainability and scalability across the application.',
+        'Integrated interactive Capture-the-Flag (CTF) challenges demonstrating foundational cybersecurity concepts and hands-on problem-solving skills.'
         ]
       }
       tags = {
@@ -33,7 +51,7 @@ const Projects = () => {
         'HTML', 
         'CSS',
         ]}
-        link = "https://github.com/JaysonGaa/jaysongaa.github.io"
+        link = "https://github.com/JaysonGaa/jayson-portfolio"
         linkText = ' View on GitHub →'
       />
 
@@ -64,8 +82,9 @@ const Projects = () => {
       date = 'Sep. 2025 - Dec. 2025'
       description = {
         [
-        'Collaborated with a team of developers to build a full-stack scheduling platform that allows instructors to upload shift spreadsheets, which are parsed, validated, and stored in a MariaDB database, replacing manual distribution workflows.',
-        'Contributed to both backend and frontend development, helping design a Node.js/Express API and a responsive React interface that enables students to securely view and retrieve schedule data in real time.'
+        'Built a full-stack scheduling platform automating instructor shift assignments from uploaded spreadsheets.',
+        'Developed REST APIs and responsive React components for secure, real-time schedule access.',
+        'Presented final application and technical architecture to class and program mentors with a comprehensive slide deck demonstrating core features and design decisions.'
         ]
       }
       tags = {
@@ -87,9 +106,8 @@ const Projects = () => {
       date = 'April 2025 - Present'
       description = {
         [
-        'Conducted hands-on penetration testing against intentionally vulnerable lab environments, identifying and exploiting security weaknesses using industry-standard tools and methodologies.',
-        'Produced structured assessment reports detailing vulnerabilities, impact, exploitation paths, and remediation recommendations.',
-        'Completed select engagements under weekly mentorship, incorporating feedback to improve testing methodology, technical analysis, and reporting quality.'
+        'Conducted penetration tests on intentionally vulnerable systems, identifying and exploiting security weaknesses using Metasploit, Gobuster, and other industry-standard tools.',
+        'Produced detailed assessment reports documenting vulnerabilities, exploitation paths, and remediation recommendations following professional penetration testing methodology.'
 
         ]}
       tags = {
