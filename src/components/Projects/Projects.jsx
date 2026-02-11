@@ -39,8 +39,7 @@ const Projects = () => {
       description = {
         [
         'Designed and developed a responsive personal portfolio showcasing projects and technical skills with clean UI/UX principles and accessibility-aware styling.',
-        'Implemented reusable React components and a consistent design system to ensure maintainability and scalability across the application.',
-        'Integrated interactive Capture-the-Flag (CTF) challenges demonstrating foundational cybersecurity concepts and hands-on problem-solving skills.'
+        'Implemented reusable React components and a consistent design system to ensure maintainability and scalability across the application.'
         ]
       }
       tags = {
