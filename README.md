@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Link: https://JaysonGaa.github.io/jayson-portfolio/
+Link: https://jaysongaa.github.io/jayson-portfolio/
 
 A modern, responsive portfolio website built with React and Vite, showcasing my projects, experience, and skills in computer science and cybersecurity.
 
