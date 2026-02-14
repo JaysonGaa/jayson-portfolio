@@ -14,7 +14,7 @@ const Hero = () => {
       {/* Main introduction text */}
       <div className='hero-text'>
         <h1>
-          Jayson Gaa
+          Hi, I'm Jayson!
         </h1>
         <p> Computer Science student at Oregon State University specializing in 
         cybersecurity. Passionate about security operations, penetration testing, 
