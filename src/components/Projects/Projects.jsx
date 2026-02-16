@@ -15,18 +15,24 @@ const Projects = () => {
       {/* Packet Scanner */}
       <TextCard 
       title = 'Network Packet Scanner' 
-      date = 'Jan. 2026'
+      date = 'Jan. 2026 - Feb. 2026'
       description = {
         [
-        'Developed a Python-based network vulnerability scanner that analyzes PCAP files to detect insecure protocols, port–protocol mismatches, vulnerable TLS versions, and plaintext credential transmission.',
-        'Implemented protocol-layer inspection and heuristic-based detection for FTP, Telnet, HTTP, SMTP, POP3, and IMAP authentication leaks.',
-        'Built automated reporting with categorized vulnerability summaries and packet-level statistics to support network security analysis and incident investigation.'
+        'Developed a full-stack web application using Flask and PyShark to analyze PCAP files and detect network vulnerabilities including insecure protocols, weak TLS versions, and plaintext credentials.',
+        'Implemented traffic analysis dashboard displaying real-time packet statistics, TCP/UDP breakdowns, unique IP tracking, and color-coded vulnerability severity levels (critical/high/medium).',
+        'Deployed containerized application with Docker on Render, handling asynchronous packet processing and session management for 50+ packet analysis per file.'
         ]
       }
       tags = {
         [
         'Python',
-        'pyShark'
+        'pyShark',
+        'Flask',
+        'Docker',
+        'HTML',
+        'CSS',
+        'Render'
+
         ]}
         link = "https://github.com/JaysonGaa/network-packet-scanner"
         linkText = ' View on GitHub →'
