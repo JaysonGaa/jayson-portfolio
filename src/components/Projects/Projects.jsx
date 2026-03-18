@@ -11,6 +11,31 @@ import TextCard from '../TextCard/TextCard.jsx'
 const Projects = () => {
   return (
     <div className="projects">
+      
+      {/* AI Resume Analyzer */}
+      <TextCard 
+      title = 'AI Resume Analyzer' 
+      date = 'Mar. 2026'
+      description = {
+        [
+        'Built a full-stack AI application using FastAPI and Streamlit that scores how well a resume matches a job description, identifies missing skills, and suggests targeted improvements.',
+        'Integrated Claude API (Anthropic) for deep resume analysis and sentence-transformers for semantic similarity scoring, enabling accurate, context-aware match evaluation.',
+        'Implemented PDF parsing with PyMuPDF and exposed a REST /analyze endpoint to handle resume and job description processing end-to-end.'
+        ]
+      }
+      tags = {
+        [
+        'Python',
+        'FastAPI',
+        'Claude API',
+        'Streamlit',
+        'PyMuPDF',
+        'sentence-transformers',
+        'NLP'
+        ]}
+        link = "https://github.com/JaysonGaa/AI-Resume-Analyzer"
+        linkText = ' View on GitHub →'
+      />
 
       {/* Packet Scanner */}
       <TextCard 
