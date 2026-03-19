@@ -27,7 +27,7 @@ const Projects = () => {
         [
         'Python',
         'FastAPI',
-        'Claude API',
+        'Groq API',
         'Streamlit',
         'PyMuPDF',
         'sentence-transformers',
