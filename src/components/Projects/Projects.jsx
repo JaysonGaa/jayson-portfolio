@@ -19,7 +19,7 @@ const Projects = () => {
       description = {
         [
         'Built a full-stack AI application using FastAPI and Streamlit that scores how well a resume matches a job description, identifies missing skills, and suggests targeted improvements.',
-        'Integrated Claude API (Anthropic) for deep resume analysis and sentence-transformers for semantic similarity scoring, enabling accurate, context-aware match evaluation.',
+        'Integrated Groq API for deep resume analysis and sentence-transformers for semantic similarity scoring, enabling accurate, context-aware match evaluation.',
         'Implemented PDF parsing with PyMuPDF and exposed a REST /analyze endpoint to handle resume and job description processing end-to-end.'
         ]
       }
